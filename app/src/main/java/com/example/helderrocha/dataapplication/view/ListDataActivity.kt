@@ -1,7 +1,8 @@
-package com.example.helderrocha.dataapplication
+package com.example.helderrocha.dataapplication.view
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.helderrocha.dataapplication.R
 
 class ListDataActivity : AppCompatActivity() {
 
