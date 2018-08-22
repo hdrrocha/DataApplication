@@ -1,4 +1,4 @@
-package com.example.helderrocha.dataapplication.view
+package com.example.helderrocha.dataapplication.view.view
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +8,6 @@ class ListDataActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.list_data_activity)
+        setContentView(R.layout.list_user_data_activity)
     }
 }
