@@ -3,7 +3,7 @@ import android.service.autofill.UserData
 import io.reactivex.Single
 import retrofit2.http.GET
 
-interface GitApi {
+interface Api {
     companion object {
         const val URL = "https://s3-sa-east-1.amazonaws.com/"
     }

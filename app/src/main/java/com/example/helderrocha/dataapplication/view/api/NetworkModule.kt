@@ -13,19 +13,19 @@ import javax.inject.Singleton
 class NetworkModule {
     @Provides
     @Singleton
-    fun providesGitApi(): ApiClient {
+    fun providesApi(): ApiClient {
 
         val gson = GsonBuilder()
                 .setLenient()
                 .create()
 
-        val gitApi = Retrofit.Builder()
-                .baseUrl(GitApi.URL)
+        val api = Retrofit.Builder()
+                .baseUrl(Api.URL)
                 .client(OkHttpClient.Builder().build())
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build()
-                .create(GitApi::class.java)
-        return ApiClient(gitApi)
+                .create(Api::class.java)
+        return ApiClient(api)
     }
 }

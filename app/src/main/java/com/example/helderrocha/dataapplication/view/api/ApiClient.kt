@@ -3,8 +3,8 @@ import android.service.autofill.UserData
 import io.reactivex.Single
 import javax.inject.Inject
 
-class ApiClient @Inject constructor(private val gitApi: GitApi) {
+class ApiClient @Inject constructor(private val api: Api) {
     fun requestUsers(): Single<UserData> {
-        return gitApi.requestUsers()
+        return api.requestUsers()
     }
 }
