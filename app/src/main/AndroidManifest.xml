@@ -14,11 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.helderrocha.dataapplication.view.view.ListDataActivity">
+        <activity android:name=".view.view.ListDataActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.view.GifActivity"></activity>
     </application>
+
 </manifest>

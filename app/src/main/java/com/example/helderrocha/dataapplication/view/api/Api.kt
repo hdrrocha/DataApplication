@@ -1,5 +1,5 @@
 package com.example.helderrocha.dataapplication.view.api
-import android.service.autofill.UserData
+import com.example.helderrocha.dataapplication.view.model.UsersData
 import io.reactivex.Single
 import retrofit2.http.GET
 
@@ -8,6 +8,6 @@ interface Api {
         const val URL = "https://s3-sa-east-1.amazonaws.com/"
     }
     @GET("pontotel-docs/data.json" )
-    fun requestUsers(): Single<UserData>
+    fun requestUsers(): Single<UsersData>
 
 }
